@@ -15,13 +15,13 @@ app.use(cors());
 
 //---Producción ------
 //Indica las rutas
-    const ordenes = require('./rutas/Ordenes');
-    const alimentos = require('./rutas/Alimentos');
+    // const ordenes = require('./rutas/Ordenes');
+    // const alimentos = require('./rutas/Alimentos');
 
-    app.use('/api/ordenes', ordenes);
-    app.use('/api/alimentos', alimentos);
+    // app.use('/api/ordenes', ordenes);
+    // app.use('/api/alimentos', alimentos);
 
-    module.exports = app;
+    // module.exports = app;
 
 //-----------Prueba1-------------
 app.get('*', (req,res) => {
