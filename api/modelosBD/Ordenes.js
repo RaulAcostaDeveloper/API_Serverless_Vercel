@@ -5,7 +5,7 @@ const Schema = mongoose.Schema;
 
 //una orden se compone del Usuario que la pide y el Alimento que solicita
 const Ordenes = mongoose.model('Orden', new Schema({
-    alimento_id: {type: Schema.Types.ObjectId, ref: 'Orden' },
+    alimento_id: {type: Schema.Types.ObjectId, ref: 'Alimento' },
     usuario_id: String,
 }));
 

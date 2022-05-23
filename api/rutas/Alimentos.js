@@ -5,7 +5,7 @@ const alimentos = require('../modelosBD/Alimentos');
 
 //Toda la lista
 router.get('/', (req, res) => {
-    // res.send('Ordenes API');
+    // res.send('Alimentos API');
 
     alimentos.find()
     .exec()
