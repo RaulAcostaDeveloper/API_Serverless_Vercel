@@ -29,7 +29,7 @@ router.post('/register', (req,res) => {
                     password: encryptedPassword,
                     salt: newSalt
                 }).then(()=>{
-                    res.send('Usuario Creado con éxito');
+                    res.send('usuario Creado con éxito');
                 })
             })
         });
@@ -52,7 +52,7 @@ router.post('/login', (req,res) => {
                 //El token de autenticación para que el usuario pueda comunicarse con el servidor
                 return res.send({token});
             }
-            return res.send('Usuario y/o contraseña incorrecta');
+            return res.send('usuario y/o contraseña incorrecta');
         });
     })
 });
